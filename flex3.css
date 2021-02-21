@@ -1,0 +1,50 @@
+.wrapper{
+	display:flex;
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wrapper> *{
+	padding: 10px;
+	flex: 1 100%;
+}
+
+.header{
+	background: #cc3f0c;
+}
+
+.footer{
+	background: #9a6d38;
+}
+
+.main{
+	text-align: left;
+	background:#33673b;
+}
+
+.aside-1{
+	background:#d8cbc7
+}
+
+.aside-2{
+	background:#d8cbc7
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px){
+	.main    {flex: 4 0px;}
+	.aside-1 {order: 2;}
+	.main {order: 3;}
+	.aside-2 {order: 4;}
+	.footer{order: 5;}
+	.header {order: 1;}
+}
+
+body{
+	padding: 2em;
+}
+
